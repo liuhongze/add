@@ -57,4 +57,6 @@ Rails.application.routes.draw do
   #   end
 
   root 'home#index'
+  match 'intro' => 'intro#intro', via: [:get, :post]
+
 end

@@ -1,0 +1,2 @@
+class BspController < ApplicationController
+end

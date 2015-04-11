@@ -108,7 +108,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 87.5rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -1773,7 +1773,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: white;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -1835,7 +1835,7 @@ meta.foundation-mq-topbar {
         height: 34px;
         line-height: 33px;
         padding: 0 40px 0 15px;
-        color: white;
+        color: black;
         position: relative; }
         .top-bar .toggle-topbar.menu-icon a span::after {
           content: "";
@@ -2061,7 +2061,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #ffffff;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -4675,13 +4675,13 @@ dialog {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #ffffff;
   color: white;
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative; }
   .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
-    color: white;
+    color: #000000;
     font-weight: bold;
     line-height: 2.8125rem;
     margin: 0; }
@@ -4729,7 +4729,7 @@ dialog {
   height: 2.8125rem;
   display: block;
   padding: 0;
-  color: white;
+  color: #ffffff;
   position: relative;
   transform: translate3d(0, 0, 0); }
   .tab-bar .menu-icon span::after {
@@ -4753,7 +4753,7 @@ dialog {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #ffffff;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;

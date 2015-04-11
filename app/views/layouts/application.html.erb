@@ -2,13 +2,109 @@
 <html>
 <head>
   <title>Pick</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "vendor/modernizr" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
 
-<%= yield %>
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Pick</label></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Pick</label></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </aside>
+
+    <div class="row full-width show-for-medium-up">
+      <div class="medium-12 columns promo-bar">
+        <span class="big-white-txt-12">FREE SHIPPING ON ORDER OVER $100. </span>
+
+        <div class="promo-close">
+          <a class="fi-x size-30 color-white"></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="top-bar hide-for-small nav-section-height" data-topbar role="navigation">
+      <section class="middle tab-bar-section nav-section-height">
+        <div class="row">
+          <div class="medium-3 columns">
+            <span>SEARCH</span>
+          </div>
+          <div class="medium-6 columns">
+            <h1 class="header-title">Pick</h1>
+          </div>
+          <div class="medium-3 columns">
+            <span>CART | LOGIN</span>
+          </div>
+        </div>
+        <p></p>
+
+        <div id="header-menu" class="medium-12 columns">
+          <ul>
+            <li><a href="#new"><span>New</span></a></li>
+            <li><a href="#new"><span>Clothing</span></a></li>
+            <li><a href="#new"><span>Socks & Leggings</span></a></li>
+            <li><a href="#new"><span>Accessories</span></a></li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+
+
+    <nav class="tab-bar show-for-small-only row collapse nav-section-height" data-topbar role="navigation">
+      <section class="small-1 columns pos-center nav-section-height">
+        <a class="left-off-canvas-toggle step fi-align-justify size-35 pos-center color-black"><p></p></a>
+      </section>
+      <section class="small-10 columns nav-section-height">
+        <h1 class="title pos-center">Pick</h1>
+      </section>
+      <section class="small-1 columns pos-center nav-section-height">
+        <a class="right-off-canvas-toggle step fi-lock size-35 pos-center color-black"><p></p></a>
+      </section>
+
+    </nav>
+
+    <div class="row show-for-small-only">
+      <div class="small-12 columns promo-bar ">
+        <span class="big-white-txt-12">FREE SHIPPING ON ORDER OVER $100. </span>
+
+        <div class="promo-close">
+          <a class="fi-x size-30 color-white"></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-section">
+      <div class="row">
+        <div class="small-12 columns">
+        <hr noshade size=5>
+        </div>
+        <p></p>
+      </div>
+      <%= yield %>
+    </section>
+
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
 
 </body>
 </html>

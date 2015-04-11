@@ -1,0 +1,131 @@
+
+
+.big-white-txt-12{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  padding: 14px;
+  box-sizing: border-box;
+
+}
+
+
+.color-black{
+  color: black;
+}
+
+.color-white{
+ color:white;
+}
+
+.color-grey-444{
+  color: #444444;
+}
+
+.img-center{
+  display:block;
+  margin:auto;
+}
+
+
+.nav-section-height{
+  height: 11rem;
+}
+
+
+.txt-mid{
+  float:center;
+}
+
+.pos-center{
+  text-align:center;
+}
+
+.promo-bar{
+  background-color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+
+}
+
+.promo-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+}
+
+.full-width {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.size-35{
+  font-size: 35px;
+}
+
+.size-30{
+  font-size: 30px;
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+  .nav-section-height{
+    height: 5rem !important;
+
+  }
+
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+  .nav-section-height{
+    height: 11rem !important;
+
+  }
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+//@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+//
+//// XLarge screens
+//@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+//
+//@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+//
+//// XXLarge screens
+//@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+.header-title{
+  font-size:70px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+#header-menu ul{
+  display: inline;
+  text-align: center;
+  li{
+    display: inline-block;
+    span{
+      font-size: 30px;
+      color: black;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+  }
+
+}
+

@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ //= require foundation_and_overrides
+
  */
+@import "foundation";
+@import "foundation-icons";
+@import "../../../vendor/assets/owl-carousel/owl.carousel";
+@import "../../../vendor/assets/owl-carousel/owl.theme";
+@import "../../../vendor/assets/owl-carousel/owl.transitions";
