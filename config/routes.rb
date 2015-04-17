@@ -58,5 +58,9 @@ Rails.application.routes.draw do
 
   root 'home#index'
   match 'intro' => 'intro#intro', via: [:get, :post]
+  match 'userlogin' => 'users#login', via: [:get, :post]
+  match 'usernew' => 'users#new', via: [:get, :post]
+  match 'userreset' => 'users#reset', via: [:get, :post]
+
 
 end

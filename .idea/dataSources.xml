@@ -5,12 +5,16 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:pick_development</jdbc-url>
+      <user-name>hongze</user-name>
+      <user-password>dfd9dfcb</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails pick: test" uuid="5ed6f578-8402-42e5-9e11-ef5925158aba">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:pick_test</jdbc-url>
+      <user-name>hongze</user-name>
+      <user-password>dfd9dfcb</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails pick: production" uuid="ee95ff44-0cb1-4885-af17-345f944690e0">

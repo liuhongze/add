@@ -1,0 +1,26 @@
+<div class="row">
+  <div id="login_section" class="small-12 medium-6 columns vertical-line">
+        <div class="medium-10 medium-offset-1 columns">
+          <h1>This isn't my first time</h1>
+          <span>Shopping with us is easy – all of your personal info and order history is saved here for you to reference and manage whenever you need to.</span><p></p>
+          <%= form_tag("/userLogin", method: "post") do %>
+            <%= label_tag(:q, "Email Address/WeChat ID:") %>
+            <%= text_field_tag(:q) %>
+              <%= label_tag(:q, "Password:") %>
+              <%= text_field_tag(:q) %>
+              <span><%= link_to "Forgot your password?", controller: "users", action: "reset"%></span>
+              <p></p>
+            <%= submit_tag("SIGN IN", :class=>"button expand")%>
+          <% end %>
+          <p></p>
+        </div>
+  </div>
+  <div id="sign_up_section"class="small-12 medium-6 columns">
+      <div class="medium-10 medium-offset-1 columns">
+        <h1>Don't have an account?</h1>
+        <span>By giving us your details, purchasing in PICK will be a faster and enjoyable experience.</span>
+        <p></p>
+        <%= button_to "Sign up now !", {:controller => "users", :action => "new"}, {:class => 'button expand'} %>
+      </div>
+  </div>
+</div>
